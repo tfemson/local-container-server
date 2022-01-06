@@ -15,3 +15,5 @@ The objective is driven by concepts of abstraction, resource sharing, and separa
    To check that the container is running, open a terminal window/tab and run `docker ps` to see info about the
    currently running docker containers. Any or all of the following container names (depending on the ones you choose to run) should be listed among the running containers:
     - `local-postgres`
+    - `local-mariadb`
+    - `local-mysql`
