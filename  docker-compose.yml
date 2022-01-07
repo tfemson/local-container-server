@@ -40,6 +40,15 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: password
 
+  local-redis:
+    image: redis:6.0.6
+    container_name: local-redis
+    ports:
+      - '6479:6379'
+    # restart: always
+    networks:
+      - main_network
+
 networks:
   main_network:
     name: local-server

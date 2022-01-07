@@ -17,3 +17,4 @@ The objective is driven by concepts of abstraction, resource sharing, and separa
     - `local-postgres`
     - `local-mariadb`
     - `local-mysql`
+    - `local-redis`
