@@ -49,6 +49,19 @@ services:
     networks:
       - main_network
 
+  local-rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: local-rabbitmq
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+    volumes:
+      - .data/rabbitmq-data:/var/lib/rabbitmq/
+      - .data/rabbitmq-log:/var/log/rabbitmq/
+    networks:
+      - main_network
+
+
 networks:
   main_network:
     name: local-server

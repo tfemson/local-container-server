@@ -18,3 +18,4 @@ The objective is driven by concepts of abstraction, resource sharing, and separa
     - `local-mariadb`
     - `local-mysql`
     - `local-redis`
+    - `local-rabbit`
