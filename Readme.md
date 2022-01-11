@@ -20,3 +20,10 @@ The objective is driven by concepts of abstraction, resource sharing, and separa
     - `local-redis`
     - `local-rabbit`
     - `local-nats`
+
+You can modify the default `docker compose` command to specify only the services you want started. E.g. 
+   ```shell
+   # To start only the mariadb, redis, and nats instances:
+   $ docker compose up local-mariadb local-redis local-nats
+   ```
+
