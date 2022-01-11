@@ -61,6 +61,17 @@ services:
     networks:
       - main_network
 
+  local-nats:
+    image: nats
+    container_name: local-nats
+    command: "--user nats --pass secret --http_port 8222 --debug=true --trace=true"
+    ports:
+      - "4222:4222"
+      - "8222:8222"
+      - "6222:6222"
+    # hostname: local-nats
+    networks:
+      - main_network
 
 networks:
   main_network:
